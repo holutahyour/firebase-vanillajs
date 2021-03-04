@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firebase App</title>
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
@@ -14,7 +21,11 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
-
+    <!-- <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script> -->
     <script>
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -32,9 +43,32 @@
       firebase.analytics();
     </script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
+      integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js" defer></script>
   </head>
   <body>
     <h2>MY Awesome App</h2>
+
+    <section id="whenSignedOut">
+      <button class="btn btn-primary" id="signInWithGoogleButton">
+        Sign In With Google
+      </button>
+      <button class="btn btn-primary" id="signInWithGithubButton">
+        Sign In With GitHub
+      </button>
+    </section>
+    <section id="whenSignedIn" hidden="true">
+      <div id="userDetails"></div>
+      <button class="btn btn-primary" id="signOutButton">Sign Out</button>
+      <ul id="thingsList"></ul>
+      <button class="btn btn-primary" id="createThing">
+        Generate a Random Thing
+      </button>
+    </section>
+    
   </body>
 </html>
