@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firebase App</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="app.css" />
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -48,18 +54,34 @@
       integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/d189a5514b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js" defer></script>
   </head>
   <body>
-    <h2>MY Awesome App</h2>
+    <!-- <h2>MY Awesome App</h2> -->
+    <section class="when-signed-out" id="whenSignedOut">
+      <div class="logo">
+        <img
+          class=""
+          src="https://img.icons8.com/color/48/000000/firebase.png"
+        />
+      </div>
+      <h1>Firebase App</h1>
+      <h3>Create An Account</h3>
+      <div class="sign-in-btns">
+        <button class="" id="signInWithGoogleButton">
+          <i class="fab fa-google"></i>
+          Sign In With Google
+        </button>
+        <button class="" id="signInWithGithubButton">
+          <i class="fab fa-github"></i>
 
-    <section id="whenSignedOut">
-      <button class="btn btn-primary" id="signInWithGoogleButton">
-        Sign In With Google
-      </button>
-      <button class="btn btn-primary" id="signInWithGithubButton">
-        Sign In With GitHub
-      </button>
+          Sign In With GitHub
+        </button>
+      </div>
     </section>
     <section id="whenSignedIn" hidden="true">
       <div id="userDetails"></div>
@@ -69,6 +91,5 @@
         Generate a Random Thing
       </button>
     </section>
-    
   </body>
 </html>

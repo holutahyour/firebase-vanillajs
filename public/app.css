@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+.when-signed-out {
+  /* background-color: paleturquoise; */
+  margin: 10rem auto;
+  width: 50rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(54, 38, 38, 0.3);
+}
+
+.when-signed-out .logo {
+  background-color: #3d3270;
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 1px 0.7rem 2rem rgba(61, 50, 112, 0.7);
+}
+
+.when-signed-out h1,
+.when-signed-out h3 {
+  color: #3d3270;
+}
+
+.when-signed-out h1 {
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.sign-in-btns {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sign-in-btns button {
+  border: none;
+  background-color: #3d3270;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 1px 0.7rem 2rem rgba(61, 50, 112, 0.7);
+}
