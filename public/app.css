@@ -26,6 +26,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 0.5rem 1rem rgba(54, 38, 38, 0.3);
+  border-radius: 0.5rem;
 }
 
 .when-signed-out .logo {
@@ -56,6 +57,7 @@ body {
   border: none;
   background-color: #3d3270;
   color: #fff;
-  padding: 1rem;
-  box-shadow: 1px 0.7rem 2rem rgba(61, 50, 112, 0.7);
+  padding: 1rem 5rem;
+  box-shadow: 1px 0.3rem 1rem rgba(61, 50, 112, 0.7);
+  border-radius: 10rem;
 }
