@@ -61,3 +61,25 @@ body {
   box-shadow: 1px 0.3rem 1rem rgba(61, 50, 112, 0.7);
   border-radius: 10rem;
 }
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #3d3270;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.main {
+  margin: 10rem;
+}
